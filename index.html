@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAR Example with model-viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include the model-viewer library -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading message -->
+    <div id="loadingMessage">Loading AR experience, please wait...</div>
+
+    <!-- 3D Model Viewer -->
+    <model-viewer id="arViewer"
+        src="https://cdn.glitch.global/15029f2c-ff19-4a4c-9273-8b8398efa919/microFos3.glb?v=1727434940290"
+        ios-src="https://cdn.glitch.global/15029f2c-ff19-4a4c-9273-8b8398efa919/microF3.usdz?v=1727434952823"
+        alt="A 3D model in AR"
+        ar
+        ar-modes="scene-viewer quick-look"
+        camera-controls
+        auto-rotate
+        style="width: 100%; height: 500px;">
+    </model-viewer>
+
+</body>
+</html>
